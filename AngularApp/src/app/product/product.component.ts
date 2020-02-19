@@ -29,8 +29,7 @@ export class ProductComponent implements OnInit {
       productid: "",
       productname: "",
       productdetails: "",    
-      productprice: null,
-      productimg: ""
+      productprice: null
     }
   }
 

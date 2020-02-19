@@ -52,7 +52,6 @@
                         <th>productname</th>
                         <th>productdetails</th>
                         <th>productprice</th>
-                        <th>productimg</th>
                       </tr>
                     </thead>
                     <tr *ngFor="let emp of productService.products">
@@ -60,15 +59,7 @@
                       <td>{{emp.productname}}</td>
                       <td>{{emp.productdetails}}</td>
                       <td>{{emp.productprice}}</td>
-                      <td>{{emp.productimg}}</td>
-                      <td>
-                          <a class="action-btn" (click)="onEdit(emp)">
-                            <i class="material-icons">edit</i>
-                          </a>
-                          <a class="action-btn" (click)="onDelete(emp._id,productForm)">
-                            <i class="material-icons">delete</i>
-                          </a>
-                        </td>
+                    
                     </tr>
                   </table>
             </div>
